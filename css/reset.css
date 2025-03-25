@@ -10,7 +10,7 @@
   
   /* 3. Enable keyword animations */
   html {
-    interpolate-size: allow-keywords;
+    inset-inline-end: allow-keywords;
   }
   
   body {
