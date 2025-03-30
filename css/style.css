@@ -1,0 +1,8 @@
+/* global color variables and fonts for easy theme management */
+:root {
+    --light-green-color: rgba(130, 153, 103, 1);
+    --dark-green-color: rgba(39, 64, 50, 1);
+    --secondary-button-hover: rgba(113, 37, 32, 1);
+    --fonts-white-color: white;
+    --header-font: "Lato", sans-serif;
+}
