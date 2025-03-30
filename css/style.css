@@ -6,3 +6,33 @@
     --fonts-white-color: white;
     --header-font: "Lato", sans-serif;
 }
+
+body {
+    font-family: var(--header-font);
+}
+
+.nav-item {
+    color: var(--dark-green-color);
+    background-color: var(--light-green-color);
+    
+}
+
+nav img {
+    width: 50%;
+}
+
+.navbar-toggler {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: var(--light-green-color);
+    border-radius: none;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: var(--dark-green-color);
+}
