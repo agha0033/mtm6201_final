@@ -7,10 +7,15 @@ About Page Image from Unspalsh: https://unsplash.com/photos/people-eating-inside
 
 About Page Staff Members from Unsplash, In Order from left to right:
 1- https://unsplash.com/photos/man-standing-near-white-wall-d1UPkiFd04A
+
 2- https://unsplash.com/photos/woman-standing-near-white-wall-YYfzJhfNU14
+
 3- https://unsplash.com/photos/man-in-white-crew-neck-t-shirt-with-tattoo-on-arm-nMv8DMdM4Z8
+
 4- https://unsplash.com/photos/woman-in-white-crew-neck-shirt-smiling-IF9TK5Uy-KI
+
 5- https://unsplash.com/photos/closeup-photography-of-woman-smiling-mEZ3PoFGs_k
+
 6- https://unsplash.com/photos/woman-in-brown-hat-and-orange-knit-sweater-V3twiVfbhz0
 
 Menu Page Images from Unsplash, In Order From top to Bottom:
