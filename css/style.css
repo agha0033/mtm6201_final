@@ -12,9 +12,27 @@ body {
     font-family: var(--header-font);
 }
 
-.container {
+/* .container {
     flex-wrap: nowrap;
+} */
+
+.navbar > .container-fluid{
+    background-color: var(--light-green-color);
+    flex-wrap: nowrap;
+    height: 100px;
 }
+
+.navbar img{
+    width: 40%;
+}
+
+.navbar > .navbar-toggler{
+    width: 40%;
+    border: none;
+    border-color: var(--light-green-color);
+}
+
+
 
 .nav-item {
     color: var(--dark-green-color);
@@ -27,12 +45,7 @@ nav img {
 }
 
 .navbar-toggler {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    background-color: var(--light-green-color);
-    border-radius: none;
-    height: 50px;
+    border: none;
 }
 
 .nav-item {
@@ -41,6 +54,10 @@ nav img {
 
 .nav-item:hover {
     color: var(--dark-green-color);
+}
+
+.offcanvas{
+    background-color: var(--light-green-color);
 }
 
 #banner {
