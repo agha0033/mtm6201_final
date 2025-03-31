@@ -3,12 +3,17 @@
     --light-green-color: rgba(130, 153, 103, 1);
     --dark-green-color: rgba(39, 64, 50, 1);
     --secondary-button-hover: rgba(113, 37, 32, 1);
+    --secondary-card-color: rgba(39, 64, 50, 0.53);
     --fonts-white-color: white;
     --header-font: "Lato", sans-serif;
 }
 
 body {
     font-family: var(--header-font);
+}
+
+.container {
+    flex-wrap: nowrap;
 }
 
 .nav-item {
@@ -19,6 +24,7 @@ body {
 
 nav img {
     width: 50%;
+    height: 50%;
 }
 
 .navbar-toggler {
@@ -27,6 +33,7 @@ nav img {
     width: 100%;
     background-color: var(--light-green-color);
     border-radius: none;
+    height: 50px;
 }
 
 .nav-item {
@@ -35,4 +42,98 @@ nav img {
 
 .nav-item:hover {
     color: var(--dark-green-color);
+}
+
+#banner {
+    background-image: url(/images/images/banner-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+    height: 50vh;
+    color: var(--dark-green-color);
+}
+
+#menu-button {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#our-story {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: var(--light-green-color);
+    color: white;
+    border-color: var(--light-green-color);
+}
+
+.btn-primary:hover {
+    color: var(--dark-green-color);
+}
+
+.btn-outline-primary {
+    background-color: white;
+    color: var(--dark-green-color);
+    border-color: var(--light-green-color);
+}
+
+h1, h2, h3 {
+    color: var(--dark-green-color);
+}
+
+main h2 {
+    background-color: var(--light-green-color);
+    color: var(--dark-green-color);
+    text-align: center;
+}
+
+.drink img{
+    margin: 10px;
+    padding: 30px;
+}
+
+.card-body {
+    background-color: var(--light-green-color);
+    padding: 50px;
+    margin: 100px;
+}
+
+.card-title {
+    color: var(--dark-green-color);
+    font-weight: bold;
+}
+
+.card-text {
+    color: var(--fonts-white-color);
+}
+
+.btn-primary {
+    background-color: var(--dark-green-color);
+    border-color: var(--dark-green-color);
+    color: var(--fonts-white-color);
+}
+
+.secondary-card-body {
+    background-color: var(--secondary-card-color);
+}
+
+.secondary-card-title {
+    color: var(--dark-green-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.secondary-card-text {
+    color: var(--fonts-white-color);
+
 }
