@@ -157,10 +157,25 @@ main h2 {
     text-align: left;
 }
 
-.footer {
+.contentFooter {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--light-green-color);
     color: var(--dark-green-color);
 }
 
-.col-md-2 {
+.list-group-item {
+    background-color: var(--light-green-color);
+    text-decoration: none;
+}
+
+.footer-links {
+    width: 20%;
+    text-decoration: none;
+    background-color: var(--light-green-color);
+}
+
+.tableFooter {
+    display: flex;
+    justify-content: space-evenly;
 }
