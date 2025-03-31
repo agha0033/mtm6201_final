@@ -123,6 +123,8 @@ main h2 {
 
 .secondary-card-body {
     background-color: var(--secondary-card-color);
+    margin: 40px;
+    padding: 80px;
 }
 
 .secondary-card-title {
@@ -131,9 +133,18 @@ main h2 {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 35px;
+    text-align: left;
 }
 
 .secondary-card-text {
     color: var(--fonts-white-color);
+    text-align: left;
+}
 
+.footer {
+    background-color: var(--light-green-color);
+    color: var(--dark-green-color);
+}
+
+.col-md-2 {
 }
