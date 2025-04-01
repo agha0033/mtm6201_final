@@ -109,7 +109,7 @@ main h2 {
     margin: 10px;
     padding: 30px;
     border-radius: 5px;
-    
+
 }
 
 .card-body {
@@ -208,3 +208,32 @@ main h2 {
     padding: 0.5em;
     border-radius: 4px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 900px;
+}
+
+.grid-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
