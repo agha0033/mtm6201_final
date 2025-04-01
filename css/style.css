@@ -10,6 +10,7 @@
 
 body {
     font-family: var(--header-font);
+    background-color: var(--fonts-white-color);
 }
 
 .navbar > .container-fluid {
@@ -71,12 +72,17 @@ nav img {
     margin: 30px;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 #secondary-button {
     margin: 30px;
     display: flex;
     justify-content: center;
+}
+
+#secondary-button:hover {
+    color: var(--dark-green-color);
 }
 
 .btn-primary {
@@ -237,4 +243,14 @@ body {
     border-radius: 4px;
     object-fit: cover;
 }
+
+#third-button {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+
 
