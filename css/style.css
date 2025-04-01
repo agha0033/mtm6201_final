@@ -161,12 +161,14 @@ main h2 {
 .list-group-item {
     background-color: var(--light-green-color);
     text-decoration: none;
+    color: var(--fonts-white-color);
 }
 
 .footer-links {
     width: 20%;
     text-decoration: none;
     background-color: var(--light-green-color);
+    color: var(--fonts-white-color);
 }
 
 .tableFooter {
