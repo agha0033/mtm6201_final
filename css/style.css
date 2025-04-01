@@ -177,15 +177,13 @@ main h2 {
 }
 
 .tableFooter {
-    display: flex;
     justify-content: baseline;
     padding: 10px;
     margin: 10px;
     display: flex;
-    width: 59px;
+    width: 30px;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+    gap: 7px;
 }
