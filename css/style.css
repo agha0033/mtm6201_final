@@ -12,27 +12,21 @@ body {
     font-family: var(--header-font);
 }
 
-/* .container {
-    flex-wrap: nowrap;
-} */
-
-.navbar > .container-fluid{
+.navbar > .container-fluid {
     background-color: var(--light-green-color);
     flex-wrap: nowrap;
     height: 100px;
 }
 
-.navbar img{
+.navbar img {
     width: 40%;
 }
 
-.navbar > .navbar-toggler{
+.navbar > .navbar-toggler {
     width: 40%;
     border: none;
     border-color: var(--light-green-color);
 }
-
-
 
 .nav-item {
     color: var(--dark-green-color);
@@ -111,7 +105,7 @@ main h2 {
     text-align: center;
 }
 
-.drink img{
+.drink img {
     margin: 10px;
     padding: 30px;
 }
@@ -177,5 +171,5 @@ main h2 {
 
 .tableFooter {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: baseline;
 }
