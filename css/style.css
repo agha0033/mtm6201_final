@@ -156,12 +156,16 @@ main h2 {
     justify-content: space-between;
     background-color: var(--light-green-color);
     color: var(--dark-green-color);
+    margin: 10px;
+    padding: 20px;
 }
 
 .list-group-item {
     background-color: var(--light-green-color);
     text-decoration: none;
     color: var(--fonts-white-color);
+    padding: 5px;
+    margin: 5px;
 }
 
 .footer-links {
@@ -169,9 +173,19 @@ main h2 {
     text-decoration: none;
     background-color: var(--light-green-color);
     color: var(--fonts-white-color);
+    padding: 10px;
 }
 
 .tableFooter {
     display: flex;
     justify-content: baseline;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    width: 59px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 }
