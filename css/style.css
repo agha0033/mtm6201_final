@@ -187,6 +187,13 @@ main h2 {
     width: 100%;
 }
 
+.contentFooter {
+    background-color: var(--light-green-color);
+    flex-wrap: nowrap;
+    height: 230px;
+    width: 100vw;
+}
+
 .tableFooter {
     display: flex;
     flex-direction: column;
@@ -283,14 +290,16 @@ body {
         align-items: center;
     }
 
-    .container-fluid {
-        margin-top: none;
-        padding: 80px;
+    .footer-links .list-group {
+        display: flex;
+        flex-direction: row;
     }
-
-    .contentFooter {
-        margin: none;
-        padding: 1px;
+      
+    .footer-links .list-group-item {
+        border: none;
+        background: transparent;
+        margin-right: 20px; /* Space between items */
+        align-items: center;
     }
 
     body h1{
@@ -331,12 +340,17 @@ body {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .contentFooter {
+        background-color: var(--light-green-color);
+        flex-wrap: nowrap;
+        height: 230px;
+        width: 100vw;
+    }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-
-
       
     #banner {
         width: 90vw;                     /* Full viewport width */
@@ -351,12 +365,6 @@ body {
         margin: 0;
         padding: 20px;
     }
-      
-
-
-    .container, #offcanvasNavbar {
-        align-items: 1em;
-    }
 
     .menuImg {
       width: 300px;
@@ -365,6 +373,110 @@ body {
     }
 
     .navbar img {
-        width: 40%;
+        width: 20%;
     }
+
+    .footer-links .list-group {
+        display: flex;
+        flex-direction: row;
+    }
+      
+    .footer-links .list-group-item {
+        border: none;
+        background: transparent;
+        margin-right: 20px; /* Space between items */
+        align-items: center;
+    }
+
+    .contentFooter {
+        background-color: var(--light-green-color);
+        flex-wrap: nowrap;
+        height: 230px;
+        width: 85vw;
+    }
+
+    /* Hide hamburger button on tablets and desktops */
+    .navbar-toggler {
+        display: none;
+    }
+  
+    /* Make the offcanvas menu always visible and reset its position */
+    .offcanvas {
+        visibility: visible !important;
+        position: static;
+     /* width: auto !important; */
+        transform: none !important;
+        flex-grow: 6;
+        justify-content: space-around;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+  
+/* Hide the close button in the offcanvas header */
+    .offcanvas-header {
+      display: none;
+    }
+  
+/* Style the offcanvas body */
+    .offcanvas-body {
+     padding: 0;
+     overflow: visible;
+    }
+  
+/* Make navbar-nav horizontal */
+    .navbar-nav {
+     flex-direction: row;
+    }
+  
+/* Add spacing between nav items */
+    .nav-item {
+     margin-left: 55px;
+
+    }
+  
+/* Remove padding from offcanvas */
+    .offcanvas {
+     padding: 0;
+    }
+        
+/* Center the navbar items */
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pe-3 {
+        padding-right: 20rem !important;
+        justify-content: space-around;
+    }
+        
+/* Make nav items larger */
+    .nav-item .nav-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+    }
+        
+/* Bold effect on hover */
+    .nav-item .nav-link:hover {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
+        
+/* Center the entire navbar content */
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        
+/* Give more space for the navigation section */
+    .offcanvas {
+        display: flex;
+        justify-content: center;
+    }
+
 }
