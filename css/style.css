@@ -300,6 +300,7 @@ body {
         background: transparent;
         margin-right: 20px; /* Space between items */
         align-items: center;
+        color: var(--dark-green-color);
     }
 
     body h1{
@@ -386,6 +387,7 @@ body {
         background: transparent;
         margin-right: 20px; /* Space between items */
         align-items: center;
+        color: var(--dark-green-color);
     }
 
     .contentFooter {
@@ -404,7 +406,7 @@ body {
     .offcanvas {
         visibility: visible !important;
         position: static;
-     /* width: auto !important; */
+        width: auto !important;
         transform: none !important;
         flex-grow: 6;
         justify-content: space-around;
@@ -465,6 +467,11 @@ body {
         font-weight: bold;
         transform: scale(1.05);
     }
+
+    .contentFooter .list-group-item:hover {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
         
 /* Center the entire navbar content */
     .container-fluid {
@@ -477,6 +484,13 @@ body {
     .offcanvas {
         display: flex;
         justify-content: center;
+    }
+
+    .secondary-card-body {
+        font-size: 30px;
+        width: 55%;
+        line-height: 44px;
+        margin-left: 300px;
     }
 
 }
