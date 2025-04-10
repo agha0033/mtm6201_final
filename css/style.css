@@ -87,9 +87,11 @@ nav img {
 }
 
 .btn-primary {
-    background-color: var(--light-green-color);
+    display: inline-block;
+    padding: 1em;
+    background-color: #79BD9A;
+    text-decoration: none;
     color: white;
-    border-color: var(--light-green-color);
 }
 
 .btn-primary:hover {
@@ -178,24 +180,30 @@ main h2 {
     margin: 5px;
 }
 
-.footer-links {
-    width: 20%;
-    text-decoration: none;
-    background-color: var(--light-green-color);
-    color: var(--fonts-white-color);
-    padding: 10px;
+.contentFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .tableFooter {
-    justify-content: baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto; /* Let it take the width it needs */
     padding: 10px;
     margin: 10px;
-    display: flex;
-    width: 30px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
+}
+
+.tableFooter .col-md-2,
+.tableFooter .col-12 {
+    width: 100%; /* Make these take full width of parent */
+    margin-bottom: 10px;
+}
+
+.tableFooter input {
+    width: 200px; /* Give the input a reasonable width */
 }
 
 .headerContent {
@@ -327,16 +335,36 @@ body {
 
 /* Desktop */
 @media (min-width: 1024px) {
+
+
+      
+    #banner {
+        width: 90vw;                     /* Full viewport width */
+        background-image: url(/images/images/banner-image.jpg);
+        background-size: cover;           /* Makes the image fill the container */
+        background-position: center;     /* Keeps it centered */
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;                   /* Enables easy text alignment */
+        align-items: right;            /* Vertical centering */
+        justify-content: center;        /* Horizontal centering */
+        margin: 0;
+        padding: 20px;
+    }
+      
+
+
     .container, #offcanvasNavbar {
         align-items: 1em;
     }
+
     .menuImg {
-      width: 100vw;
-      margin-left: 0;
-      margin-right: 0;
+      width: 300px;
+      height: 100px;
+      object-fit: cover;
     }
 
-    .contentFooter, #list-group-flush {
-        display: flex;
+    .navbar img {
+        width: 40%;
     }
-  }
+}
