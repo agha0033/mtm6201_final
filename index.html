@@ -14,11 +14,15 @@
     <link href="css/hover.css" rel="stylesheet" media="all">
 </head>
 <body>
-<div class="skip-links">
-    <a href="#offcanvasNavbar"></a>
 <div class="container">
     <header class="headerContent">
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <ul id="skip-links">
+            <li><a href="#mainNav"></a></li>
+            <li><a href="#mainContent"></a></li>
+            <li><a href="#aboutContainer"></a></li>
+            <li><a href="#footerLinks"></a></li>
+        </ul>
+        <nav id="mainNav" class="navbar bg-body-tertiary fixed-top" role="navigation">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="images/mockup/logo-plant-palette.jpg" alt="brand logo image"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -85,7 +89,7 @@
     </main>
     <footer>
         <div class="contentFooter">
-            <div class="footer-links">
+            <div id="footerLinks" class="footer-links">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">GIVE US A CALL</li>
                     <li class="list-group-item">RECIPES</li>
