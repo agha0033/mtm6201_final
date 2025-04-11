@@ -261,7 +261,7 @@ main h2 {
     width: 200px; /* Give the input a reasonable width */
 }
 
-/* footer {
+footer {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -277,34 +277,6 @@ main h2 {
     justify-content: space-between;
     align-items: center;
 }
-  
-/* Improve link positioning */
-/* .footer-links {
-    flex: 1;
-}
-  
-.footer-links .list-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 5%;
-}
-  
-.footer-links .list-group-item {
-    border: none;
-    background: transparent;
-    margin-right: 30px;
-    padding: 10px 15px;
-    color: var(--dark-green-color);
-}
-  
-/* Adjust sign-in area */
-/* .tableFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 5%;
-} */ 
 
 .headerContent {
     margin-bottom: 50px;
