@@ -106,6 +106,16 @@ nav img {
     text-decoration: none;
 }
 
+#secondary-button {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#secondary-button:hover {
+    color: var(--dark-green-color);
+}
+
 .secondary-button {
     margin: 30px;
     display: flex;
@@ -250,6 +260,51 @@ main h2 {
 .tableFooter input {
     width: 200px; /* Give the input a reasonable width */
 }
+
+/* footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.contentFooter {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 20px 5%;
+    background-color: var(--light-green-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+/* Improve link positioning */
+/* .footer-links {
+    flex: 1;
+}
+  
+.footer-links .list-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+  
+.footer-links .list-group-item {
+    border: none;
+    background: transparent;
+    margin-right: 30px;
+    padding: 10px 15px;
+    color: var(--dark-green-color);
+}
+  
+/* Adjust sign-in area */
+/* .tableFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+} */ 
 
 .headerContent {
     margin-bottom: 50px;
@@ -409,7 +464,7 @@ body {
     }
   
     /* Make the offcanvas menu always visible and reset its position */
-.offcanvas {
+    .offcanvas {
         visibility: visible !important;
         position: static;
         width: auto !important;
@@ -419,8 +474,28 @@ body {
         border: none;
         display: flex;
         align-items: right;
-}
-  
+    }
+
+    #banner h1 {
+        font-size: 26px;
+    }
+
+    .sip\&savor {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .sip\&savor h2 {
+        margin-bottom: 20px;
+    }
+      
+    .sip\&savor .drink {
+        max-width: 80%;
+        height: auto;
+    }
+
 /* Hide the close button in the offcanvas header */
     .offcanvas-header {
       display: none;
@@ -506,6 +581,17 @@ body {
         line-height: 25px;
         margin-left: 150px;
         border-radius: 4px;
+    }
+
+    #secondary-button {
+        text-align: center;
+        margin: 20px 0;
+    }
+      
+/* Make sure the anchor doesn't add unwanted styling */
+    #secondary-button a {
+        text-decoration: none;
+        display: inline-block;
     }
 
 }
@@ -784,5 +870,35 @@ body {
         display: block;
         border-radius: 4px;
     }
+
+    footer {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contentFooter {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+      
+    .footer-links .list-group {
+        justify-content: center;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+      
+    .tableFooter {
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        padding-right: 0;
+    }
     
+    #secondary-button {
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
 }
