@@ -60,7 +60,7 @@ body {
     background-color: var(--light-green-color);
 }
 
-.banner {
+#banner {
     background-image: url(/images/images/banner-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
