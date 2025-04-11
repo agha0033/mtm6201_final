@@ -106,13 +106,13 @@ nav img {
     text-decoration: none;
 }
 
-#secondary-button {
+.secondary-button {
     margin: 30px;
     display: flex;
     justify-content: center;
 }
 
-#secondary-button:hover {
+.secondary-button:hover {
     color: var(--dark-green-color);
 }
 
@@ -298,7 +298,7 @@ body {
     object-fit: cover;
 }
 
-#third-button {
+.third-button {
     margin: 30px;
     display: flex;
     justify-content: center;
