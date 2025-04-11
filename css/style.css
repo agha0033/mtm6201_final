@@ -870,31 +870,6 @@ body {
         display: block;
         border-radius: 4px;
     }
-
-    footer {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-
-    .contentFooter {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-      
-    .footer-links .list-group {
-        justify-content: center;
-        padding-left: 0;
-        flex-wrap: wrap;
-    }
-      
-    .tableFooter {
-        align-items: center;
-        width: 100%;
-        margin-top: 20px;
-        padding-right: 0;
-    }
     
     #secondary-button {
         margin: 30px;
