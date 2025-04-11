@@ -147,7 +147,7 @@ main h2 {
 .drink {
     margin: 10px;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card {
@@ -405,7 +405,7 @@ body {
     }
   
     /* Make the offcanvas menu always visible and reset its position */
-    .offcanvas {
+.offcanvas {
         visibility: visible !important;
         position: static;
         width: auto !important;
@@ -415,7 +415,7 @@ body {
         border: none;
         display: flex;
         align-items: right;
-    }
+}
   
 /* Hide the close button in the offcanvas header */
     .offcanvas-header {
@@ -746,5 +746,35 @@ body {
         display: block;
     }
 
+    .sip\&savor {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+      
+    .sip\&savor h2 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #e2e8d5;
+        padding: 10px 20px;
+        z-index: 2;
+        margin: 0;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+      
+    .drink {
+        width: 60%;
+        margin-top: 60px;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+    }
     
 }
