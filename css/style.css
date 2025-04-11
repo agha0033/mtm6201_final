@@ -477,7 +477,7 @@ body {
         background: none;
         border: none;
         display: flex;
-        align-items: right;
+        align-items: flex-start;
     }
 
     #banner h1 {
@@ -566,7 +566,7 @@ body {
     .container-fluid {
         display: flex;
         justify-content: space-between;
-        align-items: right;
+        align-items: flex-start;
     }
 
     .navbar-brand img {
