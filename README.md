@@ -6,7 +6,7 @@
 
 Using Bootstrap definitely made the process much faster and easier for me. However, customizing certain elements was initially challenging, especially when it came to targeting them correctly with CSS. After doing some research, I figured out how to fix these issues, for example, styling the input field in the footer. It took me a while to achieve the desired design for tablet and desktop views, particularly for the input and button elements in the footer. Eventually, I realized that adjusting the width of both the table and the container was the key, and after a few tries, I managed to get it right.
 
-Another challenge was modifying the hamburger menu to display horizontally on desktop and tablet screens. I discovered that I needed to customize the Bootstrap navbar using media queries to hide the hamburger menu and present a horizontal layout instead.
+Another challenge was modifying the hamburger menu to display horizontally on desktop and tablet screens. I discovered that I needed to customize the Bootstrap navbar using media queries to hide the hamburger menu and present a horizontal layout instead. Unfortunately, I couldn’t figure out why the banner image disappeared from the homepage after publishing my code on GitHub, even though it displayed correctly when I went live in VS Code.
 
 Overall, this project felt different from my previous ones because I relied heavily on Bootstrap throughout most of the code. Since I had never used it so extensively before, I had to spend time researching, asking friends who were going through similar challenges, It was a valuable learning experience.
 
