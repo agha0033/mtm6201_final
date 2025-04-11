@@ -527,6 +527,8 @@ body {
       width: 300px;
       height: 100px;
       object-fit: cover;
+      display: flex;
+      justify-content: center;
     }
 
     .navbar img {
@@ -698,21 +700,51 @@ body {
     }
     
     .aboutContiner p {
-      width: 60%;
-      line-height: 1.6;
-      font-size: 1.1rem;
+      width: 90vw;
+      line-height: 35px;
+      font-size: 30px;
     }
     
     /* Staff grid layout */
     .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-      margin: 20px 15px 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        max-width: 1200px; /* Set a max width */
+        margin: 20px auto 50px; /* Center the grid with auto horizontal margins */
+        padding: 0 20px; /* Add some padding on the sides */
+    }
+      
+    .grid-container img {
+        width: 100%;
+        height: 250px; /* Set a consistent height */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 4px; /* Optional: slight rounded corners */
+    }
+
+    .ourMenu h2 {
+        display: inline-block;
+        background-color: #e2e8d5;
+        padding: 30px 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 1.8rem;
     }
     
-    .grid-container img {
-      width: 100%;
-      margin-bottom: 0;
+/* Center content */
+    .menuContainer {
+        align-items: center;
+        padding: 0 35%;
     }
+      
+/* Make images the same size but larger */
+    .menuImg {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    
 }
