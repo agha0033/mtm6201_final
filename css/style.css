@@ -67,6 +67,52 @@ nav img {
     justify-content: flex-end;
     height: 50vh;
     color: var(--dark-green-color);
+    width: 100%;
+    position: relative;
+}
+
+/* Default button styling */
+.btn-primary {
+    background-color: var(--light-green-color);
+    border-color: var(--light-green-color);
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover state */
+.btn-primary:hover {
+    background-color: var(--light-green-color); /* Darker shade for hover */
+    border-color: var(--light-green-color);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-outline-primary {
+    background-color: var(--dark-green-color);
+    border-color: var(--dark-green-color);
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover state */
+.btn-outline-primary:hover {
+    background-color: var(--dark-green-color); 
+    border-color: var(--dark-green-color);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-primary {
+    background-color: var(--secondary-button-hover);
+    border-color: var(--secondary-button-hover);
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    color: var(--fonts-white-color);
+}
+
+/* Hover state */
+.btn-primary:hover {
+    background-color: var(--secondary-button-hover); /* Darker shade for hover */
+    border-color: var(--secondary-button-hover);
+    transform: translateY(-2px); /* Slight lift effect */
+    color: var(--fonts-white-color);
 }
 
 #menu-button {
@@ -118,7 +164,6 @@ main h2 {
     margin: 10px;
     padding: 30px;
     border-radius: 5px;
-
 }
 
 .card-body {
@@ -192,10 +237,6 @@ main h2 {
     flex-wrap: nowrap;
     height: 230px;
     width: 100vw;
-}
-
-.tableFooter .form-control {
-    font-size: 
 }
 
 .tableFooter .btn-primary {
@@ -298,6 +339,20 @@ body {
         align-items: center;
     }
 
+    #banner {
+        width: 100%;
+        background-position: center;
+    }
+    
+    #banner h1 {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        margin: 0;
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
     .footer-links .list-group {
         display: flex;
         flex-direction: row;
@@ -309,6 +364,8 @@ body {
         margin-right: 20px; /* Space between items */
         align-items: center;
         color: var(--dark-green-color);
+        font-size: 14px;
+        padding: 23px;
     }
 
     body h1{
@@ -331,18 +388,14 @@ body {
         font-size: 1.5em;
     }
 
-    nav{
+    /* nav{
         display: flex;
         flex-direction: row;
-    }
+    } */
 
-    .navbar-brand img{
-        width: 50%;
-    }
-
-    .navbar-toggler{
-        width: 10%;
-    }
+    .navbar img {
+        width: 60%;
+    }   
 
     .menuImg {
         width: 100vw;
@@ -354,25 +407,132 @@ body {
         background-color: var(--light-green-color);
         flex-wrap: nowrap;
         height: 230px;
+        width: 80vw;
+    }
+
+    /* Hide hamburger button on tablets and desktops */
+    .navbar-toggler {
+        display: none;
+    }
+  
+    /* Make the offcanvas menu always visible and reset its position */
+    .offcanvas {
+        visibility: visible !important;
+        position: static;
+        width: auto !important;
+        transform: none !important;
+        flex-grow: 1;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: right;
+    }
+  
+/* Hide the close button in the offcanvas header */
+    .offcanvas-header {
+      display: none;
+    }
+  
+/* Style the offcanvas body */
+    .offcanvas-body {
+     padding: 0;
+     overflow: visible;
+    }
+  
+/* Make navbar-nav horizontal */
+    .navbar-nav {
+     flex-direction: row;
+    }
+  
+/* Add spacing between nav items */
+    .nav-item {
+     margin-left: 5px;
+     justify-content: space-between;
+    }
+  
+/* Remove padding from offcanvas */
+    .offcanvas {
+     padding: 0;
+    }
+        
+/* Center the navbar items */
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pe-3 {
+        padding-right: 20rem !important;
+        /* justify-content: space-around; */
+    }
+        
+/* Make nav items larger */
+    .nav-item .nav-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+    }
+        
+/* Bold effect on hover */
+    .nav-item .nav-link:hover {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
+
+    .contentFooter .list-group-item:hover {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
+
+    .list-group-item {
+        display: flex;
+        align-items: center;
+    }
+        
+/* Center the entire navbar content */
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+    }
+
+    .navbar-brand img {
         width: 100vw;
     }
+        
+/* Give more space for the navigation section */
+    .offcanvas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondary-card-body {
+        font-size: 16px;
+        width: 65%;
+        line-height: 25px;
+        margin-left: 150px;
+        border-radius: 4px;
+        background-color: var(--light-green-color);
+    }
+
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-      
+
     #banner {
-        width: 90vw;                     /* Full viewport width */
-        background-image: url(/images/images/banner-image.jpg);
-        background-size: cover;           /* Makes the image fill the container */
-        background-position: center;     /* Keeps it centered */
-        background-repeat: no-repeat;
-        position: relative;
-        display: flex;                   /* Enables easy text alignment */
-        align-items: right;            /* Vertical centering */
-        justify-content: center;        /* Horizontal centering */
+        width: 100%;
+        background-position: center;
+    }
+    
+    #banner h1 {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
         margin: 0;
-        padding: 20px;
+        padding: 10px;
+        font-size: 2.5rem;
     }
 
     .menuImg {
@@ -383,6 +543,10 @@ body {
 
     .navbar img {
         width: 20%;
+    }
+
+    .card {
+        background-color: var(--light-green-color);
     }
 
     .footer-links .list-group {
@@ -503,6 +667,30 @@ body {
         width: 55%;
         line-height: 44px;
         margin-left: 300px;
+        border-radius: 4px;
+        background-color: var(--light-green-color);
+    }
+
+    .card-body {
+        background-color: var(--light-green-color);
+    }
+
+    .card {
+        font-size: 19px;
+        width: 45%;
+        line-height: 30px;
+        margin-left: 350px;
+        background-color: var(--light-green-color);
+    }
+
+    .card .btn {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 35px;
+        padding-bottom: 28px;
+        
     }
 
 }
