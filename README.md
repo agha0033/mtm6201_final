@@ -13,10 +13,10 @@ Overall, this project felt different from my previous ones because I relied heav
 ## Resources Used
 
 ### Frameworks/Libraries
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ### Fonts
-- Google Fonts
+- [Google Fonts](https://fonts.google.com/selection)
 
 ### Images
 
