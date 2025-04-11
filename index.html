@@ -17,17 +17,17 @@
 <div class="container">
     <header class="headerContent" role="banner">
         <ul id="skip-links">
-            <li><a href="#mainNav"></a>Go to navigation</li>
-            <li><a href="#mainContent"></a>Go to content</li>
-            <li><a href="#footerLinks"></a>Go to footer</li>
+            <li><a href="#mainNav">Go to navigation</a></li>
+            <li><a href="#mainContent">Go to content</a></li>
+            <li><a href="#footerLinks">Go to footer</a></li>
         </ul>
         <nav id="mainNav" class="navbar bg-body-tertiary fixed-top" role="navigation">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="images/mockup/logo-plant-palette.jpg" alt="brand logo image"></a>
+              <a class="navbar-brand" href="index.html"><img src="images/mockup/logo-plant-palette.jpg" alt="Plant Palette logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1"     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -52,38 +52,32 @@
         <section id="banner">
             <h1>Plant-Based Food & Juices</h1>
         </section>
-        <section id=menu-button>
-            <a href="menu.html">
-             <button type="button" class="btn btn-primary btn-lg">See our menu</button>
-            </a>
+        <section id="menu-button">
+            <a href="menu.html" class="btn btn-primary btn-lg">See our menu</a>
         </section>
-        <section id=secondary-button>
-            <a href="about.html">
-             <button type="button" class="btn btn-outline-primary">Our story</button>
-            </a>
+        <section id="secondary-button">
+            <a href="about.html" class="btn btn-outline-primary">Our story</a>
         </section>
         <section class="sip&savor container-fluid my-5">
             <h2>Sip & Savor: Veggie Night Out</h2>
-            <img src="images/images/drink-image.jpg" class="drink" alt="sip & savor drinks image">
+            <img src="images/images/drink-image.jpg" class="drink" alt="Assortment of colorful plant-based drinks for Sip & Savor event">
         </section>
         <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Weekend Events</h5>
-              <p class="card-text">Groove to acoustic tunes in a cozy, 
-                garden-inspired ambiance.</p>
-              <a href="#" class="btn btn-primary">Find Out More</a>
+                 <p class="card-text">Groove to acoustic tunes in a cozy, 
+                 garden-inspired ambiance.</p>
+                 <a href="#" class="btn btn-primary">Find Out More</a>
             </div>
         </div>
         <div class="secondary-card-body">
             <h5 class="secondary-card-title">7 Day Veggie & Juice Challenge</h5>
-            <li class="secondary-card-text">
-                <ul>
-                  <li>Nourish your body with fresh vegetarian meals and cold-pressed juices.</li>
-                  <li>Boost energy, improve digestion, and enhance well-being.</li>
-                  <li>Enjoy daily curated dishes paired with revitalizing juices.</li>
-                  <li>Perfect for everyone, whether you're a vegetarian or just exploring.</li>
-                </ul>
-            </li>
+            <ul class="secondary-card-text">
+                <li>Nourish your body with fresh vegetarian meals and cold-pressed juices.</li>
+                <li>Boost energy, improve digestion, and enhance well-being.</li>
+                <li>Enjoy daily curated dishes paired with revitalizing juices.</li>
+                <li>Perfect for everyone, whether you're a vegetarian or just exploring.</li>
+            </ul>
         </div>
     </main>
     <footer role="contentinfo">
@@ -97,13 +91,15 @@
                 </ul>
             </div>
             <div class="tableFooter">
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Stay in the know</label>
-                    <input type="text" class="form-control" id="inputZip" placeholder="Email Address">
-                </div>
-                  <div class="col-12">
-                     <button type="subscribe" class="btn btn-primary">Sign in</button>
-                  </div>
+                <form>
+                    <div class="col-md-2">
+                        <label for="emailInput" class="form-label">Stay in the know</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Email Address">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>

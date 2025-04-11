@@ -14,29 +14,34 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <nav class="navbar bg-body-tertiary fixed-top">
+        <header role="banner">
+            <ul id="skip-links">
+                <li><a href="#mainNav">Go to navigation</a></li>
+                <li><a href="#mainContent">Go to content</a></li>
+                <li><a href="#footerLinks">Go to footer</a></li>
+            </ul>
+            <nav id="mainNav" class="navbar bg-body-tertiary fixed-top" role="navigation">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">
-                     <img src="images/mockup/logo-plant-palette.jpg" alt="brand logo image">
+                     <img src="images/mockup/logo-plant-palette.jpg" alt="Plant Palette logo">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1"     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="menu.html">Menu</a>
+                                    <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
                                 </li>
                            </ul>
                         </div>
@@ -44,29 +49,35 @@
                 </div>
             </nav>
         </header>
-        <main class="menuContainer">
+        <main id="mainContent" class="menuContainer" role="main">
             <section class="ourMenu container-fluid">
                 <h2>Select a menu</h2>
             </section>
-            <img src="images/images/food-image.jpg" alt="food image" class="menuImg">
-            <div class="secondary-button">
-                <button type="button" class="btn btn-outline-primary">Food</button> 
-            </div>
-            <img src="images/images/dessert-image.jpg" alt="dessert image" class="menuImg">
-            <div class="secondary-button">
-                <button type="button" class="btn btn-outline-primary">Dessert</button> 
-            </div>
-            <img src="images/images/drinks-image.jpg" alt="drinks image" class="menuImg">
-            <div class="secondary-button">
-                <button type="button" class="btn btn-outline-primary">Drinks</button> 
-            </div>
+            <section class="menu-item">
+                <img src="images/images/food-image.jpg" alt="Plant-based food dishes" class="menuImg">
+                <div class="secondary-button">
+                    <a href="#food-menu" class="btn btn-outline-primary">Food</a> 
+                </div>
+            </section>
+            <section class="menu-item">
+                <img src="images/images/dessert-image.jpg" alt="Plant-based desserts" class="menuImg">
+                <div class="secondary-button">
+                    <a href="#dessert-menu" class="btn btn-outline-primary">Dessert</a> 
+                </div>
+            </section>
+            <section class="menu-item">
+                <img src="images/images/drinks-image.jpg" alt="Fresh juices and plant-based drinks" class="menuImg">
+                <div class="secondary-button">
+                    <a href="#drinks-menu" class="btn btn-outline-primary">Drinks</a> 
+                </div>
+            </section>
             <div class="third-button">
-                <button type="button" class="btn btn-primary btn-lg">Order Now</button>
+                <a href="#order" class="btn btn-primary btn-lg">Order Now</a>
             </div>
         </main>
         <footer role="contentinfo">
             <div class="contentFooter">
-                <div class="footer-links">
+                <div id="footerLinks" class="footer-links">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">GIVE US A CALL</li>
                         <li class="list-group-item">RECIPES</li>
@@ -75,14 +86,15 @@
                     </ul>
                 </div>
                 <div class="tableFooter">
-                     <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Stay in the know</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder="Email Address">
-                    </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary">Sign in</button>
+                    <form>
+                        <div class="col-md-2">
+                            <label for="emailInput" class="form-label">Stay in the know</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email Address">
                         </div>
-                    </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </footer>
